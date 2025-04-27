@@ -5,6 +5,7 @@ import { getMessages, getUsersForSidebar, sendMessage } from "../controllers/mes
 const router = express.Router();
 
 // first static routes
+console.log("Registering routes...");
 router.get("/users", protectRoute, getUsersForSidebar);
 router.post("/send/:id", protectRoute, sendMessage);
 
